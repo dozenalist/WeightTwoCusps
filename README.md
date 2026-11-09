@@ -74,7 +74,7 @@ lake build
 Use `import WeightTwoCusps.Tactic` for automation without importing every basis.
 
 ```lean
-import WeightTwoCusps
+import WeightTwoCusps.Tactic
 
 open WeightTwoCusps
 
