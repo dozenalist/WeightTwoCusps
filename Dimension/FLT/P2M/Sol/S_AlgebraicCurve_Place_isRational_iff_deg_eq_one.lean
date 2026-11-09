@@ -1,0 +1,44 @@
+/-
+Copyright (c) 2026 Anthropic, PBC. Released under the Apache 2.0 license.
+Copied from anthropics/fermats-last-theorem, revision 6e837e75355538c7f80bab5b956861e86c4eacc2,
+P2M/Sol/S_AlgebraicCurve_Place_isRational_iff_deg_eq_one.lean.
+Adapted for this project: local imports, modules, unused code, and shared proofs.
+See Dimension/FLT/LICENSE, NOTICE, and ATTRIBUTION_UPSTREAM.md.
+-/
+module
+
+public import Dimension.FLT.Definitions.Def_AlgebraicCurve_PlaceEvaluation
+public import Dimension.FLT.P2M.Util
+
+public import Dimension.FLT.EndScopes
+
+@[expose] public section
+namespace P2MW.S_AlgebraicCurve_Place_isRational_iff_deg_eq_one
+
+open AlgebraicCurve
+
+theorem solution {K F : Type*} [Field K] [Field F] [Algebra K F] (v : Place K F) : v.IsRational ↔ v.deg = 1 := by
+  constructor
+  · intro hv
+    have hbij : Function.Bijective (algebraMap K v.ResidueField) :=
+      ⟨v.algebraMap_residueField_injective, hv⟩
+    show Module.finrank K v.ResidueField = 1
+    rw [← Module.finrank_self K]
+    exact ((AlgEquiv.ofBijective (Algebra.ofId K v.ResidueField) hbij).toLinearEquiv.finrank_eq).symm
+  · intro h x
+    have hbot : (⊥ : Subalgebra K v.ResidueField) = ⊤ :=
+      Subalgebra.bot_eq_top_iff_finrank_eq_one.mpr h
+    have hx : x ∈ (⊥ : Subalgebra K v.ResidueField) := by
+      rw [hbot]
+      exact Algebra.mem_top
+    exact Algebra.mem_bot.mp hx
+
+
+flt_end_scopes
+
+/- Public statement copied from Theorems/Thm_AlgebraicCurve_Place_isRational_iff_deg_eq_one.lean. -/
+@[expose] public section
+
+open AlgebraicCurve
+theorem AlgebraicCurve.Place.isRational_iff_deg_eq_one {K F : Type*} [Field K] [Field F] [Algebra K F] (v : Place K F) : v.IsRational ↔ v.deg = 1 := by p2m_exact_reverting @_root_.P2MW.S_AlgebraicCurve_Place_isRational_iff_deg_eq_one.solution
+

@@ -1,0 +1,48 @@
+module
+
+public import WeightTwoCusps.Levels.HasEtaQuotientBasis.«104».New.«104_eta_1m1_2p3_4p1_8m1_13p1_26m1_52p1_104p1»
+public import WeightTwoCusps.Oldforms
+public import WeightTwoCusps.Tactic.EtaOldform
+
+/-!
+# A cuspidal eta basis vector at level 208
+
+The eta expression is `η(2z)^(-1) η(4z)^3 η(8z) η(16z)^(-1) η(26z) η(52z)^(-1) η(104z) η(208z)`; see
+[the local level table](../../TABLE.md#level-208).
+This is a vector of the complete cuspidal eta basis.
+
+This is the oldform `f(2z)` of `cuspForm_104_eta_1m1_2p3_4p1_8m1_13p1_26m1_52p1_104p1`,
+with the original source and total dilation recorded in its name.
+-/
+
+set_option maxRecDepth 4096
+
+@[expose] public section
+
+noncomputable section
+
+namespace WeightTwoCusps
+
+open UpperHalfPlane
+
+/-- The cuspidal eta quotient `η(2z)^(-1) η(4z)^3 η(8z) η(16z)^(-1) η(26z) η(52z)^(-1) η(104z) η(208z)` at level 208. -/
+abbrev cuspForm_104_eta_1m1_2p3_4p1_8m1_13p1_26m1_52p1_104p1_old_208_2 : gamma0CuspForms 208 :=
+  gamma0Rescale cuspForm_104_eta_1m1_2p3_4p1_8m1_13p1_26m1_52p1_104p1 2
+
+/-- The degeneracy lift is the corresponding cuspidal eta quotient. -/
+theorem cuspForm_104_eta_1m1_2p3_4p1_8m1_13p1_26m1_52p1_104p1_old_208_2_eq_eta :
+    cuspForm_104_eta_1m1_2p3_4p1_8m1_13p1_26m1_52p1_104p1_old_208_2 =
+      etaQuotientCuspForm 208 sparse![208; 1 => -1, 3 => 3, 7 => 1, 15 => -1, 25 => 1, 51 => -1, 103 => 1, 207 => 1] := by
+  eta_oldform
+
+/-- The coefficients of degrees zero through 99, including the constant term. -/
+@[eta_simps] theorem cuspForm_104_eta_1m1_2p3_4p1_8m1_13p1_26m1_52p1_104p1_old_208_2_first_coeffs :
+    first_coeffs 100 cuspForm_104_eta_1m1_2p3_4p1_8m1_13p1_26m1_52p1_104p1_old_208_2 =
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, -1, 0, 0, 0,
+     -2, 0, -3, 0, 2, 0, -1, 0, 0, 0, 2, 0, 0, 0, 2, 0, -1, 0, -1, 0,
+     -1, 0, 2, 0, 4, 0, 4, 0, 1, 0, -4, 0, 1, 0, -2, 0, -1, 0, -2, 0,
+     -2, 0, 1, 0, -1, 0, 0, 0, -3, 0, -4, 0, -4, 0, 4, 0, 2, 0, 0, 0,
+     2, 0, 0, 0, 0, 0, -2, 0, 4, 0, -2, 0, -2, 0, 5, 0, 2, 0, 6, 0] := by
+  eta_coeff
+
+end WeightTwoCusps

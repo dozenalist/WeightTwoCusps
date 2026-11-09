@@ -1,0 +1,68 @@
+/-
+Copyright (c) 2026 Anthropic, PBC. Released under the Apache 2.0 license.
+Copied from anthropics/fermats-last-theorem, revision 6e837e75355538c7f80bab5b956861e86c4eacc2,
+P2M/Sol/S_AlgebraicCurve_Place_transcendental_of_ord_ne_zero.lean.
+Adapted for this project: local imports, modules, unused code, and shared proofs.
+See Dimension/FLT/LICENSE, NOTICE, and ATTRIBUTION_UPSTREAM.md.
+-/
+module
+
+public import Dimension.FLT.Definitions.Def_AlgebraicCurve_PlacesOverDVR
+public import Mathlib.RingTheory.Algebraic.Basic
+public import Dimension.FLT.P2M.Util
+
+public import Dimension.FLT.EndScopes
+public import Dimension.FLT.Definitions.Def_AlgebraicCurve_DivisorClassGroup
+public import Mathlib.RingTheory.Algebraic.Defs
+
+@[expose] public section
+namespace P2MW.S_AlgebraicCurve_Place_transcendental_of_ord_ne_zero
+
+noncomputable section
+open Polynomial
+
+namespace AlgebraicCurve
+p2m_export "AlgebraicCurve" "Place.mem_of_eval_monic_eq_zero Place"
+namespace Place
+p2m_export "AlgebraicCurve.Place" "mem_of_eval_monic_eq_zero ext ord ord_zero ord_coe_unit algebraMap_mem' toValuationSubring"
+namespace FF2R0
+p2m_open "AlgebraicCurve.Place AlgebraicCurve"
+
+variable {K F : Type*} [Field K] [Field F] [Algebra K F] (v : AlgebraicCurve.Place K F)
+
+private theorem mem_of_isAlgebraic {x : F} (hx : IsAlgebraic K x) : x ∈ v.toValuationSubring := by
+  have hint : IsIntegral K x := hx.isIntegral
+  refine v.mem_of_eval_monic_eq_zero (P := (minpoly K x).map (algebraMap K F)) ((minpoly.monic hint).map _)
+    (fun i => ?_) ?_
+  · rw [coeff_map]; exact v.algebraMap_mem' _
+  · rw [eval_map_algebraMap, minpoly.aeval]
+
+theorem ord_eq_zero_of_isAlgebraic' {x : F} (hx : IsAlgebraic K x) : v.ord x = 0 := by
+  by_cases hx0 : x = 0
+  · simp [hx0, v.ord_zero]
+  · let u : v.toValuationSubringˣ :=
+      { val := ⟨x, mem_of_isAlgebraic v hx⟩
+        inv := ⟨x⁻¹, mem_of_isAlgebraic v hx.inv⟩
+        val_inv := Subtype.ext (mul_inv_cancel₀ hx0)
+        inv_val := Subtype.ext (inv_mul_cancel₀ hx0) }
+    exact v.ord_coe_unit u
+
+end AlgebraicCurve.Place.FF2R0
+
+theorem solution {K F : Type*} [Field K] [Field F] [Algebra K F] (v : AlgebraicCurve.Place K F) {t : F} (ht : v.ord t ≠ 0) :
+    Transcendental K t :=
+  fun h => ht (AlgebraicCurve.Place.FF2R0.ord_eq_zero_of_isAlgebraic' v h)
+
+end
+
+
+flt_end_scopes
+
+/- Public statement copied from Theorems/Thm_AlgebraicCurve_Place_transcendental_of_ord_ne_zero.lean. -/
+@[expose] public section
+p2m_erase_attrs «instance» AlgebraicCurve.Place.instIsPrimeCenter AlgebraicCurve.Place.instIsFractionRingIntegralClosureAt AlgebraicCurve.Place.instIsTorsionFreeSubtypeMemValuationSubringToValuationSubringIntegralClosureAt AlgebraicCurve.Place.instIsDedekindDomainIntegralClosureAt AlgebraicCurve.Place.instFiniteSubtypeMemValuationSubringToValuationSubringIntegralClosureAt AlgebraicCurve.instFundamentalIdentityOfSumRamificationInertia AlgebraicCurve.Place.instIsScalarTowerResidueFieldRestrictPushforward AlgebraicCurve.Place.instAlgebraResidueFieldRestrictPushforward AlgebraicCurve.Place.instIsLocalHomRestrictInclusion
+p2m_erase_attrs «simp» AlgebraicCurve.Place.placeOfPrime_toValuationSubring AlgebraicCurve.Place.mem_fiberOver AlgebraicCurve.Place.fiberEquiv_symm_apply AlgebraicCurve.Place.fiberEquiv_apply AlgebraicCurve.Place.centerHeightOneSpectrum_asIdeal AlgebraicCurve.Divisor.mapRestrict_single AlgebraicCurve.Divisor.pushforward_single AlgebraicCurve.Place.coe_restrictInclusion AlgebraicCurve.Place.mem_fiber AlgebraicCurve.Place.restrict_toValuationSubring AlgebraicCurve.Divisor.degree_pushforward AlgebraicCurve.Place.restrictResidueMap_residue AlgebraicCurve.Pic0.coe_pushforwardDegZeroHom AlgebraicCurve.Pic0.coe_pullbackDegZeroHom
+
+theorem AlgebraicCurve.Place.transcendental_of_ord_ne_zero {K F : Type*} [Field K] [Field F] [Algebra K F] (v : AlgebraicCurve.Place K F) {t : F} (ht : v.ord t ≠ 0) :
+    Transcendental K t := by p2m_exact_reverting @_root_.P2MW.S_AlgebraicCurve_Place_transcendental_of_ord_ne_zero.solution
+

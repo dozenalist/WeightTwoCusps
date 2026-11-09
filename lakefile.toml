@@ -1,0 +1,27 @@
+name = "WeightTwoCusps"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["WeightTwoCusps"]
+
+[leanOptions]
+pp.unicode.fun = true # pretty-prints `fun a ↦ b`
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.35.0"
+
+[[require]]
+name = "Determinant"
+git = "https://github.com/dozenalist/Determinant.git"
+rev = "e5b3eb11ff984bbc41fc21775d4e69469d65c8ce"
+
+[[lean_lib]]
+name = "WeightTwoCusps"
+
+[[lean_lib]]
+name = "Dimension"
+leanOptions = { maxHeartbeats = 4000000, synthInstance.maxHeartbeats = 400000, backward.isDefEq.respectTransparency.types = false }

@@ -1,0 +1,1366 @@
+{
+  "upstreamCommit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+  "originalModuleCount": 439,
+  "retainedModuleCount": 176,
+  "retainedLineCount": 86718,
+  "seeds": [
+    "P2M.Sol.S_ModularCurve_twelve_mul_add_mul_index_le_finrank_cuspForm_Gamma",
+    "P2M.Sol.S_ModularCurve_six_mul_level_mul_finrank_parabolicHoms_Gamma_add_eq",
+    "P2M.Sol.S_ModularCurve_periodMapOf_mem_parabolicHoms",
+    "P2M.Sol.S_ModularCurve_eq_zero_of_forall_re_periodOf_eq_zero",
+    "P2M.Sol.S_ModularCurve_Period_exists_basis_parabolicHoms_castAddHom_comp"
+  ],
+  "deps": {
+    "AnalysisImports": [
+      "GroupImports"
+    ],
+    "Definitions.Def_AlgebraicCurve_AdelicIndex": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_Repartitions"
+    ],
+    "Definitions.Def_AlgebraicCurve_BaseChangeGalois": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup"
+    ],
+    "Definitions.Def_AlgebraicCurve_CanonicalDivisor": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_CanonicalDivisor"
+    ],
+    "Definitions.Def_AlgebraicCurve_CanonicalLocalResidueInstance": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_PlaceCompletion",
+      "Definitions.Def_AlgebraicCurve_CanonicalLocalResidueInstanceV2",
+      "Definitions.Def_AlgebraicCurve_WeilOfKaehler"
+    ],
+    "Definitions.Def_AlgebraicCurve_CanonicalLocalResidueInstanceV2": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_PlaceCompletion",
+      "Definitions.Def_AlgebraicCurve_WeilOfKaehler"
+    ],
+    "Definitions.Def_AlgebraicCurve_Correspondence": [
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_BaseChangeGalois"
+    ],
+    "Definitions.Def_AlgebraicCurve_Differentials": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup"
+    ],
+    "Definitions.Def_AlgebraicCurve_DivisorClassGroup": [],
+    "Definitions.Def_AlgebraicCurve_DivisorPushPull": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup"
+    ],
+    "Definitions.Def_AlgebraicCurve_IsCurveOver": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup"
+    ],
+    "Definitions.Def_AlgebraicCurve_LocalResidue": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex"
+    ],
+    "Definitions.Def_AlgebraicCurve_PlaceCompletion": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_DedekindDomain_AdicValuation_InlineSpecific"
+    ],
+    "Definitions.Def_AlgebraicCurve_PlaceEvaluation": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup"
+    ],
+    "Definitions.Def_AlgebraicCurve_PlacesOverDVR": [
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull"
+    ],
+    "Definitions.Def_AlgebraicCurve_PoleDivisorPackage": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex"
+    ],
+    "Definitions.Def_AlgebraicCurve_RatFuncPlaceClassification": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty"
+    ],
+    "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup"
+    ],
+    "Definitions.Def_AlgebraicCurve_RatFuncPlaces": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup"
+    ],
+    "Definitions.Def_AlgebraicCurve_RegularDifferentials": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_CanonicalDivisor"
+    ],
+    "Definitions.Def_AlgebraicCurve_Repartitions": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup"
+    ],
+    "Definitions.Def_AlgebraicCurve_RiemannRochRows": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver"
+    ],
+    "Definitions.Def_AlgebraicCurve_TateResidueCurrency": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_DedekindDomain_AdicValuation_InlineSpecific",
+      "Definitions.Def_AlgebraicCurve_PlaceCompletion"
+    ],
+    "Definitions.Def_AlgebraicCurve_WeilOfKaehler": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_LocalResidue"
+    ],
+    "Definitions.Def_Compat_Mathlib430": [],
+    "Definitions.Def_DedekindDomain_AdicValuation_InlineSpecific": [],
+    "Definitions.Def_ModularCurve_CanonicalDivisor": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup"
+    ],
+    "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_CanonicalDivisor"
+    ],
+    "Definitions.Def_ModularCurve_LevelNFunctionField": [
+      "MathlibImports",
+      "Definitions.Def_PeriodPair_Uniformization"
+    ],
+    "Definitions.Def_ModularCurve_PeriodLattice": [
+      "AnalysisImports"
+    ],
+    "Definitions.Def_ModularCurve_PeriodMap": [],
+    "Definitions.Def_ModularCurve_PeriodOf": [
+      "AnalysisImports",
+      "Definitions.Def_ModularCurve_PeriodLattice",
+      "Definitions.Def_ModularCurve_PeriodMap"
+    ],
+    "Definitions.Def_PeriodPair_Uniformization": [
+      "MathlibImports"
+    ],
+    "EndScopes": [],
+    "GroupImports": [],
+    "MathlibImports": [],
+    "P2M.Sol.S_AlgebraicCurve_constantsAreBase_of_exists_isRational": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_PlaceEvaluation",
+      "P2M.Sol.S_AlgebraicCurve_Place_mem_of_ord_nonneg",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_nonneg_of_mem",
+      "P2M.Sol.S_AlgebraicCurve_Divisor_degree_eq_sum_support",
+      "P2M.Sol.S_AlgebraicCurve_Place_evalAt_ne_zero",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_constantsAreBase_of_isAlgClosed": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_PlaceEvaluation",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_nonempty_place_of_ratFunc_tower",
+      "P2M.Sol.S_AlgebraicCurve_Place_isRational_of_isAlgClosed",
+      "P2M.Sol.S_AlgebraicCurve_Place_isRational_iff_deg_eq_one",
+      "P2M.Sol.S_AlgebraicCurve_constantsAreBase_of_exists_isRational",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_dCoordGenerates_of_isCurveOver": [
+      "P2M.Sol.S_AlgebraicCurve_hasCanonicalDivisor_of_isCurveOver",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "P2M.Util"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_degree_canonicalDivisor_eq_of_riemannRoch": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_RiemannRochRows",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Divisor_degree_eq_sum": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Divisor_degree_eq_sum_support": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_ell_canonicalDivisor_eq_genus_of_riemannRoch": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_RiemannRochRows",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_ell_eq_zero_of_degree_neg": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_essFiniteType_of_transcendental_of_finiteDimensional": [
+      "MathlibImports",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_exists_separating_transcendental_of_perfectField": [
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_finiteDimensional_adjoin_of_transcendental": [
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_finiteDimensional_lSpace": [
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_X_nonneg_of_ne_placeInfty",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "P2M.Util"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_finite_and_finrank_regularDifferentials_eq_genus": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_RegularDifferentials",
+      "Definitions.Def_AlgebraicCurve_RiemannRochRows",
+      "P2M.Sol.S_AlgebraicCurve_dCoordGenerates_of_isCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_IsCurveOver_exists_separating_transcendental",
+      "P2M.Sol.S_AlgebraicCurve_isCurveOver_ratFunc",
+      "P2M.Sol.S_AlgebraicCurve_essFiniteType_of_transcendental_of_finiteDimensional",
+      "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_isAlgClosed_of_isCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_constantsAreBase_of_isAlgClosed",
+      "P2M.Sol.S_AlgebraicCurve_finiteDimensional_lSpace",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_finite_setOf_ord_ne_zero_of_finiteDimensional": [
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_nonneg_of_mem",
+      "P2M.Sol.S_AlgebraicCurve_Place_mem_of_ord_nonneg",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_finite_setOf_ord_ne_zero",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_isAlgClosed": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_AlgebraicCurve_RiemannRochRows",
+      "P2M.Sol.S_AlgebraicCurve_residueTheoremK_of_isAlgClosed",
+      "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_residueTheoremK_of_isAlgClosed",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_isAlgClosed_of_isCurveOver": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_RiemannRochRows",
+      "Definitions.Def_AlgebraicCurve_CanonicalLocalResidueInstance",
+      "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_isAlgClosed",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_residueTheoremK_of_isAlgClosed": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_AlgebraicCurve_RiemannRochRows",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_genus_eq_genusFF": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_RiemannRochRows",
+      "P2M.Sol.S_AlgebraicCurve_indexOfSpecialty_eq_finrank_H1",
+      "P2M.Sol.S_AlgebraicCurve_ell_canonicalDivisor_eq_genus_of_riemannRoch",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_hasCanonicalDivisor_of_isCurveOver": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "P2M.Sol.S_AlgebraicCurve_IsCurveOver_exists_separating_transcendental",
+      "P2M.Sol.S_KaehlerDifferential_span_D_eq_top_of_transcendental",
+      "P2M.Sol.S_KaehlerDifferential_D_ne_zero_of_transcendental",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_hasPrincipalDivisors_of_finiteDimensional_of_isSeparable": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_finite_setOf_ord_ne_zero_of_finiteDimensional",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_hasPrincipalDivisors",
+      "P2M.Sol.S_AlgebraicCurve_Place_sum_ramificationIndex_mul_inertiaDeg_fiberOver",
+      "P2M.Sol.S_AlgebraicCurve_Divisor_degree_eq_sum",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_hasPrincipalDivisors_of_transcendental_of_isSeparable": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_hasPrincipalDivisors_of_finiteDimensional_of_isSeparable",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_indexOfSpecialty_eq_finrank_H1": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_indexOfSpecialty_eq_of_genusReached": [
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_X_nonneg_of_ne_placeInfty",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "P2M.Util"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_instIsCurveOverRatFunc": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceClassification",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_placeInfty",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_hasPrincipalDivisors",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_isAlgebraic_adjoin_of_transcendental": [
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_IsCurveOver_exists_separating_transcendental": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_isCurveOver_of_transcendental": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "P2M.Sol.S_AlgebraicCurve_hasPrincipalDivisors_of_transcendental_of_isSeparable",
+      "P2M.Sol.S_AlgebraicCurve_Place_finite_residueField_of_finiteDimensional",
+      "P2M.Sol.S_AlgebraicCurve_instIsCurveOverRatFunc",
+      "P2M.Sol.S_AlgebraicCurve_kaehlerRankOne_of_transcendental",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_isCurveOver_of_transcendental_of_isSeparable": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_isCurveOver_of_transcendental",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_isCurveOver_ratFunc": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceClassification",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_kaehlerRankOne_of_transcendental": [
+      "MathlibImports",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_linearIndependent_pow_of_transcendental": [
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_X_nonneg_of_ne_placeInfty",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_PoleDivisorPackage",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "P2M.Util"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_adicValuation_isRankOneDiscrete": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_adicValuation_isTrivialOn": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_card_fiberOver_mul_ramificationIndex_mul_inertiaDeg": [
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "P2M.Sol.S_AlgebraicCurve_Place_ramificationIndex_eq_of_restrict_eq",
+      "P2M.Sol.S_AlgebraicCurve_Place_inertiaDeg_eq_of_restrict_eq",
+      "P2M.Sol.S_AlgebraicCurve_Place_sum_ramificationIndex_mul_inertiaDeg_fiberOver",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_deg_eq_one_of_isAlgClosed": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_deg_ne_zero_of_finiteDimensional_adjoin": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "P2M.Sol.S_AlgebraicCurve_Place_inertiaDeg_pos_of_finiteDimensional",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_ne_zero",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_diffCoeff_smul_D_eq_of_ord_eq_one": [
+      "P2M.Sol.S_AlgebraicCurve_Place_isSeparable_adjoin_of_ord_eq_one",
+      "P2M.Sol.S_KaehlerDifferential_D_ne_zero_of_transcendental",
+      "P2M.Sol.S_AlgebraicCurve_Place_transcendental_of_ord_ne_zero",
+      "P2M.Util",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_Differentials"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_diffCoeff_smul_D_of_ord_eq_one": [
+      "P2M.Sol.S_AlgebraicCurve_Place_isSeparable_adjoin_of_ord_eq_one",
+      "P2M.Sol.S_KaehlerDifferential_span_D_eq_top_of_transcendental",
+      "P2M.Sol.S_AlgebraicCurve_Place_transcendental_of_ord_ne_zero",
+      "P2M.Util",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_Differentials"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_D_ne_zero_of_ord_eq_one": [
+      "P2M.Sol.S_AlgebraicCurve_Place_isSeparable_adjoin_of_ord_eq_one",
+      "P2M.Sol.S_KaehlerDifferential_D_ne_zero_of_transcendental",
+      "P2M.Sol.S_AlgebraicCurve_Place_transcendental_of_ord_ne_zero",
+      "P2M.Util",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_Differentials"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_evalAt_ne_zero": [
+      "Definitions.Def_AlgebraicCurve_PlaceEvaluation",
+      "P2M.Sol.S_AlgebraicCurve_Place_mem_of_ord_nonneg",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_exists_algEquiv_smul_eq_of_restrict_eq": [
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "Definitions.Def_AlgebraicCurve_BaseChangeGalois",
+      "P2M.Util",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_exists_of_orderMap": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_exists_ord_eq_one": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_exists_ord_pos": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_exists_restrict_eq": [
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "P2M.Sol.S_AlgebraicCurve_Place_sum_ramificationIndex_mul_inertiaDeg_fiberOver",
+      "P2M.Util",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_finite_residueField_of_finiteDimensional": [
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_inertiaDeg_eq_of_restrict_eq": [
+      "Definitions.Def_AlgebraicCurve_Correspondence",
+      "P2M.Sol.S_AlgebraicCurve_Place_exists_algEquiv_smul_eq_of_restrict_eq",
+      "P2M.Sol.S_AlgebraicCurve_SemilinearAut_inertiaDeg_smul",
+      "P2M.Util",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_inertiaDeg_pos_of_finiteDimensional": [
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_isRational_iff_deg_eq_one": [
+      "Definitions.Def_AlgebraicCurve_PlaceEvaluation",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_isRational_of_isAlgClosed": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_PlaceEvaluation",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_eq_one_of_isAlgClosed",
+      "P2M.Sol.S_AlgebraicCurve_Place_isRational_iff_deg_eq_one",
+      "P2M.Sol.S_AlgebraicCurve_Place_mem_of_ord_nonneg",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_isSeparable_adjoin_of_ord_eq_one": [
+      "Definitions.Def_AlgebraicCurve_Differentials",
+      "P2M.Sol.S_AlgebraicCurve_isAlgebraic_adjoin_of_transcendental",
+      "P2M.Sol.S_AlgebraicCurve_Place_transcendental_of_ord_ne_zero",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_mem_iff_ord_nonneg": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_mem_of_ord_nonneg": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_min_ord_le_ord_add": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_ord_algebraMap": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_ord_diffCoeff_D_nonneg_of_isSeparable": [
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "Definitions.Def_AlgebraicCurve_Differentials",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_nonneg_of_mem",
+      "P2M.Sol.S_AlgebraicCurve_Place_mem_of_ord_nonneg",
+      "P2M.Sol.S_AlgebraicCurve_Place_transcendental_of_ord_ne_zero",
+      "P2M.Sol.S_AlgebraicCurve_finiteDimensional_adjoin_of_transcendental",
+      "P2M.Sol.S_KaehlerDifferential_D_ne_zero_of_transcendental",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_ord_diffCoeff_D_nonneg_of_perfectField": [
+      "Definitions.Def_AlgebraicCurve_Differentials",
+      "P2M.Sol.S_AlgebraicCurve_Place_isSeparable_adjoin_of_ord_eq_one",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_diffCoeff_D_nonneg_of_isSeparable",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_ord_eq_neg_log_of_valuationSubring_eq": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_ord_nonneg_of_mem": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_ord_restrictAlong_eq_natCard_algHom_of_isGalois": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_Correspondence",
+      "Definitions.Def_AlgebraicCurve_BaseChangeGalois",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "P2M.Sol.S_AlgebraicCurve_Place_card_fiberOver_mul_ramificationIndex_mul_inertiaDeg",
+      "P2M.Sol.S_AlgebraicCurve_Place_exists_algEquiv_smul_eq_of_restrict_eq",
+      "P2M.Sol.S_AlgebraicCurve_Place_restrict_ofAlgAut_smul",
+      "P2M.Sol.S_AlgebraicCurve_Place_deg_eq_one_of_isAlgClosed",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_algebraMap",
+      "P2M.Sol.S_AlgebraicCurve_Place_restrictAlong_surjective",
+      "P2M.Sol.S_AlgebraicCurve_Place_deg_ne_zero_of_finiteDimensional_adjoin",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_ord_sub_one_le_ordDiff_D_of_perfectField": [
+      "Definitions.Def_AlgebraicCurve_Differentials",
+      "P2M.Sol.S_AlgebraicCurve_Place_diffCoeff_smul_D_of_ord_eq_one",
+      "P2M.Sol.S_AlgebraicCurve_Place_diffCoeff_smul_D_eq_of_ord_eq_one",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_diffCoeff_D_nonneg_of_perfectField",
+      "P2M.Sol.S_AlgebraicCurve_Place_exists_ord_eq_one",
+      "P2M.Sol.S_AlgebraicCurve_Place_min_ord_le_ord_add",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_algebraMap",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_ramificationIndex_eq_of_restrict_eq": [
+      "Definitions.Def_AlgebraicCurve_Correspondence",
+      "P2M.Sol.S_AlgebraicCurve_Place_exists_algEquiv_smul_eq_of_restrict_eq",
+      "P2M.Sol.S_AlgebraicCurve_SemilinearAut_ramificationIndex_smul",
+      "P2M.Util",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_restrictAlong_surjective": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_Correspondence",
+      "P2M.Sol.S_AlgebraicCurve_Place_exists_restrict_eq",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_restrict_ofAlgAut_smul": [
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_BaseChangeGalois",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_sum_ramificationIndex_mul_inertiaDeg": [
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_nonneg_of_mem",
+      "P2M.Sol.S_AlgebraicCurve_Place_mem_of_ord_nonneg",
+      "P2M.Sol.S_AlgebraicCurve_Place_mem_iff_ord_nonneg",
+      "P2M.Sol.S_AlgebraicCurve_Place_exists_ord_pos",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_sum_ramificationIndex_mul_inertiaDeg_fiberOver": [
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "P2M.Sol.S_AlgebraicCurve_Place_mem_iff_ord_nonneg",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_nonneg_of_mem",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_Place_transcendental_of_ord_ne_zero": [
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "P2M.Util",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_degree_eq_zero_of_forall_eq_ord": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_degree_eq_zero_of_forall_eq_ord_algebraMap",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_finite_setOf_ord_ne_zero",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_degree_eq_zero_of_forall_eq_ord_algebraMap": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_exists_forall_ne_ofHeightOneSpectrum",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_subsingleton_setOf_forall_ne_ofHeightOneSpectrum",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_ofHeightOneSpectrum_of_span",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_eq_neg_intDegree_of_forall_ne_ofHeightOneSpectrum",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_eq_one_of_forall_ne_ofHeightOneSpectrum",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_algebraMap",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_eq_one_of_forall_ne_ofHeightOneSpectrum": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_toValuationSubring_eq_of_forall_ne_ofHeightOneSpectrum",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_eq_one_of_isAlgClosed": [
+      "P2M.Sol.S_AlgebraicCurve_isCurveOver_ratFunc",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_ne_zero": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_eq_one_of_forall_ne_ofHeightOneSpectrum",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_placeInfty": [
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceClassification",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_eq_one_of_forall_ne_ofHeightOneSpectrum",
+      "P2M.Util",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_PlaceEvaluation"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_exists_forall_ne_ofHeightOneSpectrum": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_finite_setOf_ord_ne_zero": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_hasPrincipalDivisors": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_finite_setOf_ord_ne_zero",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_degree_eq_zero_of_forall_eq_ord",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_nonempty_place_of_ratFunc_tower": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "P2M.Sol.S_AlgebraicCurve_Place_exists_restrict_eq",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_eq_neg_intDegree_of_forall_ne_ofHeightOneSpectrum": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_eq_neg_log_of_valuationSubring_eq",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_toValuationSubring_eq_of_forall_ne_ofHeightOneSpectrum",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_ofHeightOneSpectrum_eq_neg_log": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_eq_neg_log_of_valuationSubring_eq",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_ofHeightOneSpectrum_of_span": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_ofHeightOneSpectrum_eq_neg_log",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_placeInfty": [
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceClassification",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_eq_neg_intDegree_of_forall_ne_ofHeightOneSpectrum",
+      "P2M.Util",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_PlaceEvaluation"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_placeInfty_X": [
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_X_nonneg_of_ne_placeInfty",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_PoleDivisorPackage",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "P2M.Util"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_X_nonneg_of_ne_placeInfty": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_PoleDivisorPackage",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "P2M.Sol.S_AlgebraicCurve_Place_sum_ramificationIndex_mul_inertiaDeg",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_placeInfty",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_placeInfty",
+      "P2M.Sol.S_AlgebraicCurve_Place_exists_restrict_eq",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceClassification",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists": [
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_X_nonneg_of_ne_placeInfty",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_PoleDivisorPackage",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "P2M.Util"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_subsingleton_setOf_forall_ne_ofHeightOneSpectrum": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_toValuationSubring_eq_of_forall_ne_ofHeightOneSpectrum": [
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "P2M.Sol.S_AlgebraicCurve_Place_adicValuation_isRankOneDiscrete",
+      "P2M.Sol.S_AlgebraicCurve_Place_adicValuation_isTrivialOn",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_residueTheoremK_of_isAlgClosed": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "Definitions.Def_DedekindDomain_AdicValuation_InlineSpecific",
+      "Definitions.Def_AlgebraicCurve_PlaceCompletion",
+      "Definitions.Def_AlgebraicCurve_TateResidueCurrency",
+      "Definitions.Def_AlgebraicCurve_CanonicalLocalResidueInstance",
+      "P2M.Sol.S_AlgebraicCurve_residueTraceCompletionCommute",
+      "P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_residueTheoremK_ratFunc_of_isAlgClosed": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_residueTraceCompletionCommute": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_DedekindDomain_AdicValuation_InlineSpecific",
+      "Definitions.Def_AlgebraicCurve_PlaceCompletion",
+      "Definitions.Def_AlgebraicCurve_TateResidueCurrency",
+      "Definitions.Def_AlgebraicCurve_CanonicalLocalResidueInstance",
+      "P2M.Sol.S_AlgebraicCurve_tateCommFinite",
+      "P2M.Sol.S_AlgebraicCurve_tateTraceCompat_of_isSeparable",
+      "P2M.Sol.S_AlgebraicCurve_tateAgreement",
+      "P2M.Sol.S_AlgebraicCurve_tateChainRule",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_SemilinearAut_inertiaDeg_smul": [
+      "Definitions.Def_AlgebraicCurve_Correspondence",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_SemilinearAut_ord_algebraMap_smul": [
+      "Definitions.Def_AlgebraicCurve_Correspondence",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_SemilinearAut_ramificationIndex_smul": [
+      "Definitions.Def_AlgebraicCurve_Correspondence",
+      "P2M.Sol.S_AlgebraicCurve_SemilinearAut_ord_algebraMap_smul",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_stichtenothGenusExists_of_isCurveOver": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "P2M.Sol.S_AlgebraicCurve_IsCurveOver_exists_separating_transcendental",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_stichtenothGenusExists",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_sum_ordDiff_D_le_two_mul_genusFF_of_isSeparable": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_Differentials",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_RiemannRochRows",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_PoleDivisorPackage",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaceInfty",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "P2M.Sol.S_AlgebraicCurve_isCurveOver_of_transcendental_of_isSeparable",
+      "P2M.Sol.S_AlgebraicCurve_isCurveOver_ratFunc",
+      "P2M.Sol.S_AlgebraicCurve_hasCanonicalDivisor_of_isCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_dCoordGenerates_of_isCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_essFiniteType_of_transcendental_of_finiteDimensional",
+      "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_isAlgClosed_of_isCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_constantsAreBase_of_isAlgClosed",
+      "P2M.Sol.S_AlgebraicCurve_stichtenothGenusExists_of_isCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_weilDualityAdelic_of_functionFieldRiemannRoch_of_stichtenothGenusExists",
+      "P2M.Sol.S_AlgebraicCurve_genus_eq_genusFF",
+      "P2M.Sol.S_AlgebraicCurve_degree_canonicalDivisor_eq_of_riemannRoch",
+      "P2M.Sol.S_AlgebraicCurve_Place_exists_ord_eq_one",
+      "P2M.Sol.S_AlgebraicCurve_Place_D_ne_zero_of_ord_eq_one",
+      "P2M.Sol.S_AlgebraicCurve_Place_diffCoeff_smul_D_of_ord_eq_one",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_diffCoeff_D_nonneg_of_perfectField",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_sub_one_le_ordDiff_D_of_perfectField",
+      "P2M.Sol.S_AlgebraicCurve_TranscendenceTower_degree_poleDivisor_eq_finrank",
+      "P2M.Sol.S_AlgebraicCurve_TranscendenceTower_poleDivisor_apply",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_placeInfty_X",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_X_nonneg_of_ne_placeInfty",
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_deg_placeInfty",
+      "P2M.Sol.S_AlgebraicCurve_linearIndependent_pow_of_transcendental",
+      "P2M.Sol.S_KaehlerDifferential_D_ne_zero_of_transcendental",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_sum_ord_sub_one_le_two_mul_genusFF_of_isSeparable": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_Differentials",
+      "P2M.Sol.S_AlgebraicCurve_sum_ordDiff_D_le_two_mul_genusFF_of_isSeparable",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_sub_one_le_ordDiff_D_of_perfectField",
+      "P2M.Sol.S_KaehlerDifferential_D_ne_zero_of_transcendental",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_tateAgreement": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_DedekindDomain_AdicValuation_InlineSpecific",
+      "Definitions.Def_AlgebraicCurve_PlaceCompletion",
+      "Definitions.Def_AlgebraicCurve_TateResidueCurrency",
+      "Definitions.Def_AlgebraicCurve_CanonicalLocalResidueInstance",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_tateChainRule": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_DedekindDomain_AdicValuation_InlineSpecific",
+      "Definitions.Def_AlgebraicCurve_PlaceCompletion",
+      "Definitions.Def_AlgebraicCurve_TateResidueCurrency",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_tateCommFinite": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_DedekindDomain_AdicValuation_InlineSpecific",
+      "Definitions.Def_AlgebraicCurve_PlaceCompletion",
+      "Definitions.Def_AlgebraicCurve_TateResidueCurrency",
+      "Definitions.Def_AlgebraicCurve_PlacesOverDVR",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_tateTraceCompat_of_isSeparable": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_RatFuncPlaces",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_ModularCurve_CanonicalDivisor",
+      "Definitions.Def_ModularCurve_CanonicalDivisorUniformizer",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_CanonicalDivisor",
+      "Definitions.Def_AlgebraicCurve_LocalResidue",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_DedekindDomain_AdicValuation_InlineSpecific",
+      "Definitions.Def_AlgebraicCurve_PlaceCompletion",
+      "Definitions.Def_AlgebraicCurve_TateResidueCurrency",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_TranscendenceTower_degree_poleDivisor_eq_finrank": [
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_X_nonneg_of_ne_placeInfty",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_PoleDivisorPackage",
+      "P2M.Util"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_TranscendenceTower_poleDivisor_apply": [
+      "P2M.Sol.S_AlgebraicCurve_RationalFunctionField_ord_X_nonneg_of_ne_placeInfty",
+      "EndScopes",
+      "Definitions.Def_AlgebraicCurve_DivisorClassGroup",
+      "Definitions.Def_AlgebraicCurve_DivisorPushPull",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_PoleDivisorPackage",
+      "P2M.Util"
+    ],
+    "P2M.Sol.S_AlgebraicCurve_weilDualityAdelic_of_functionFieldRiemannRoch_of_stichtenothGenusExists": [
+      "MathlibImports",
+      "Definitions.Def_AlgebraicCurve_AdelicIndex",
+      "Definitions.Def_AlgebraicCurve_RiemannRochRows",
+      "P2M.Sol.S_AlgebraicCurve_indexOfSpecialty_eq_of_genusReached",
+      "P2M.Sol.S_AlgebraicCurve_ell_eq_zero_of_degree_neg",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_KaehlerDifferential_D_ne_zero_of_transcendental": [
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_KaehlerDifferential_span_D_eq_top_of_transcendental": [
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_Matrix_SpecialLinearGroup_exists_addMonoidHom_conj_T_pow_minimalPeriod_eq_of_finsum_eq_zero": [
+      "GroupImports",
+      "P2M.Sol.S_ModularGroup_exists_mulEquiv_freeProduct_quotient_center",
+      "P2M.Sol.S_Monoid_CoprodI_exists_addMonoidHom_conj_pow_minimalPeriod_eq_of_finsum_eq_zero",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_Matrix_SpecialLinearGroup_exists_generators_free_mod_neg_one_of_forall_trace_ne": [
+      "GroupImports",
+      "P2M.Sol.S_Matrix_SpecialLinearGroup_nonempty_freeGroupBasis_map_quotient_center_of_forall_trace_ne",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_Matrix_SpecialLinearGroup_finrank_addMonoidHom_eq_of_forall_trace_ne": [
+      "GroupImports",
+      "P2M.Sol.S_Matrix_SpecialLinearGroup_nonempty_freeGroupBasis_map_quotient_center_of_forall_trace_ne",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_Matrix_SpecialLinearGroup_nonempty_freeGroupBasis_map_quotient_center_of_forall_trace_ne": [
+      "GroupImports",
+      "P2M.Sol.S_ModularGroup_exists_mulEquiv_freeProduct_quotient_center",
+      "P2M.Sol.S_Monoid_CoprodI_nonempty_freeGroupBasis_fin_kuroshRank",
+      "P2M.Sol.S_Subgroup_card_orbitRelQuotient_mul_card_eq_index",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_eq_zero_of_forall_re_periodOf_eq_zero": [
+      "AnalysisImports",
+      "Definitions.Def_ModularCurve_PeriodOf",
+      "P2M.Sol.S_ModularCurve_exists_hasEquivariantPrimitiveOf",
+      "P2M.Sol.S_ModularCurve_periodOf_apply_eq_sub_of_hasEquivariantPrimitiveOf",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_exists_hasEquivariantPrimitiveOf": [
+      "AnalysisImports",
+      "Definitions.Def_ModularCurve_PeriodOf",
+      "P2M.Sol.S_Subgroup_IsArithmetic_exists_nat_mem_strictPeriods_conj",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_LevelN_exists_linearMap_regularDifferentials_cuspForm_injective": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_LevelNFunctionField",
+      "Definitions.Def_AlgebraicCurve_RegularDifferentials",
+      "P2M.Sol.S_ModularCurve_LevelN_exists_linearMap_regularDifferentials_mdifferentiable",
+      "P2M.Sol.S_ModularCurve_LevelN_isZeroAtImInfty_slash_of_mem_regularDifferentials",
+      "P2M.Sol.S_ModularCurve_LevelN_slash_eq_self_of_mem_Gamma_of_mul_eq",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_LevelN_exists_linearMap_regularDifferentials_mdifferentiable": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_LevelNFunctionField",
+      "Definitions.Def_AlgebraicCurve_RegularDifferentials",
+      "P2M.Sol.S_WLight_levelN_structure_package",
+      "P2M.Sol.S_AlgebraicCurve_Place_exists_of_orderMap",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_LevelN_exists_monoidHom_algEquiv_fixedField_eq_adjoin": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_LevelNFunctionField",
+      "P2M.Sol.S_WLight_levelN_structure_package",
+      "P2M.Sol.S_WLight_frickeFunction_modularity_package",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_LevelN_exists_place_ord_neg_forall_smul_eq": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_LevelNFunctionField",
+      "Definitions.Def_AlgebraicCurve_BaseChangeGalois",
+      "P2M.Sol.S_WLight_levelN_structure_package",
+      "P2M.Sol.S_WLight_frickeFunction_orbit_package",
+      "P2M.Sol.S_WLight_frickeFunction_modularity_package",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_LevelN_exists_place_ord_sub_pos_forall_smul_eq": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_LevelNFunctionField",
+      "Definitions.Def_AlgebraicCurve_BaseChangeGalois",
+      "P2M.Sol.S_WLight_levelN_structure_package",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_LevelN_isZeroAtImInfty_slash_of_mem_regularDifferentials": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_LevelNFunctionField",
+      "Definitions.Def_AlgebraicCurve_RegularDifferentials",
+      "P2M.Sol.S_WLight_levelN_structure_package",
+      "P2M.Sol.S_WLight_frickeFunction_modularity_package",
+      "P2M.Sol.S_WLight_frickeFunction_orbit_package",
+      "P2M.Sol.S_AlgebraicCurve_Place_exists_of_orderMap",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_LevelN_slash_eq_self_of_mem_Gamma_of_mul_eq": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_LevelNFunctionField",
+      "P2M.Sol.S_WLight_levelN_structure_package",
+      "P2M.Sol.S_WLight_frickeFunction_modularity_package",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_LevelN_twelve_mul_add_mul_index_le_genusFF": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_LevelNFunctionField",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_BaseChangeGalois",
+      "Definitions.Def_AlgebraicCurve_Correspondence",
+      "P2M.Sol.S_ModularCurve_LevelN_exists_monoidHom_algEquiv_fixedField_eq_adjoin",
+      "P2M.Sol.S_ModularCurve_LevelN_exists_place_ord_sub_pos_forall_smul_eq",
+      "P2M.Sol.S_ModularCurve_LevelN_exists_place_ord_neg_forall_smul_eq",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_restrictAlong_eq_natCard_algHom_of_isGalois",
+      "P2M.Sol.S_AlgebraicCurve_sum_ord_sub_one_le_two_mul_genusFF_of_isSeparable",
+      "P2M.Sol.S_AlgebraicCurve_Place_min_ord_le_ord_add",
+      "P2M.Sol.S_AlgebraicCurve_Place_ord_algebraMap",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_periodMapOf_mem_parabolicHoms": [
+      "AnalysisImports",
+      "Definitions.Def_ModularCurve_PeriodOf",
+      "P2M.Sol.S_ModularGroup_exists_eq_conj_T_zpow_of_trace_sq_eq_four",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_periodOf_apply_eq_sub_of_hasEquivariantPrimitiveOf": [
+      "AnalysisImports",
+      "Definitions.Def_ModularCurve_PeriodOf",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_Period_existsUnique_isParabolicHom_sup_zpowers_neg_one_apply_eq": [
+      "GroupImports",
+      "Definitions.Def_ModularCurve_PeriodMap",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_Period_exists_basis_parabolicHoms_castAddHom_comp": [
+      "Definitions.Def_ModularCurve_PeriodMap",
+      "P2M.Sol.S_Matrix_SpecialLinearGroup_exists_generators_free_mod_neg_one_of_forall_trace_ne",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_Period_finrank_parabolicHoms_add_natCard_le_finrank_addMonoidHom_add_one": [
+      "GroupImports",
+      "Definitions.Def_ModularCurve_PeriodMap",
+      "P2M.Sol.S_Matrix_SpecialLinearGroup_exists_addMonoidHom_conj_T_pow_minimalPeriod_eq_of_finsum_eq_zero",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_six_mul_level_mul_finrank_parabolicHoms_Gamma_add_eq": [
+      "GroupImports",
+      "Definitions.Def_ModularCurve_PeriodMap",
+      "P2M.Sol.S_ModularGroup_exists_eq_conj_T_zpow_of_trace_sq_eq_four",
+      "P2M.Sol.S_ModularCurve_Period_finrank_parabolicHoms_add_natCard_le_finrank_addMonoidHom_add_one",
+      "P2M.Sol.S_Matrix_SpecialLinearGroup_finrank_addMonoidHom_eq_of_forall_trace_ne",
+      "P2M.Sol.S_ModularCurve_Period_exists_basis_parabolicHoms_castAddHom_comp",
+      "P2M.Sol.S_ModularCurve_Period_existsUnique_isParabolicHom_sup_zpowers_neg_one_apply_eq",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularCurve_twelve_mul_add_mul_index_le_finrank_cuspForm_Gamma": [
+      "MathlibImports",
+      "Definitions.Def_ModularCurve_LevelNFunctionField",
+      "Definitions.Def_AlgebraicCurve_Repartitions",
+      "Definitions.Def_AlgebraicCurve_RegularDifferentials",
+      "Definitions.Def_AlgebraicCurve_IsCurveOver",
+      "Definitions.Def_AlgebraicCurve_RiemannRochRows",
+      "P2M.Sol.S_WLight_levelN_structure_package",
+      "P2M.Sol.S_ModularCurve_LevelN_exists_monoidHom_algEquiv_fixedField_eq_adjoin",
+      "P2M.Sol.S_ModularCurve_LevelN_twelve_mul_add_mul_index_le_genusFF",
+      "P2M.Sol.S_ModularCurve_LevelN_exists_linearMap_regularDifferentials_cuspForm_injective",
+      "P2M.Sol.S_AlgebraicCurve_exists_separating_transcendental_of_perfectField",
+      "P2M.Sol.S_AlgebraicCurve_isCurveOver_of_transcendental",
+      "P2M.Sol.S_AlgebraicCurve_essFiniteType_of_transcendental_of_finiteDimensional",
+      "P2M.Sol.S_AlgebraicCurve_hasCanonicalDivisor_of_isCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_dCoordGenerates_of_isCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_isCurveOver_ratFunc",
+      "P2M.Sol.S_AlgebraicCurve_functionFieldRiemannRoch_of_isAlgClosed_of_isCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_constantsAreBase_of_isAlgClosed",
+      "P2M.Sol.S_AlgebraicCurve_stichtenothGenusExists_of_isCurveOver",
+      "P2M.Sol.S_AlgebraicCurve_weilDualityAdelic_of_functionFieldRiemannRoch_of_stichtenothGenusExists",
+      "P2M.Sol.S_AlgebraicCurve_genus_eq_genusFF",
+      "P2M.Sol.S_AlgebraicCurve_finite_and_finrank_regularDifferentials_eq_genus",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularForm_weierstrassP_torsion_qExpansion_package": [
+      "P2M.Sol.S_WLight_weierstrassP_qExpansion_package",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularGroup_exists_eq_conj_T_zpow_of_trace_sq_eq_four": [
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_ModularGroup_exists_mulEquiv_freeProduct_quotient_center": [
+      "GroupImports",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_Monoid_CoprodI_exists_addMonoidHom_conj_pow_minimalPeriod_eq_of_finsum_eq_zero": [
+      "GroupImports",
+      "P2M.Util",
+      "Definitions.Def_Compat_Mathlib430",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_Monoid_CoprodI_isTree_cosetGraph": [
+      "GroupImports",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_Monoid_CoprodI_nonempty_freeGroupBasis_fin_kuroshRank": [
+      "GroupImports",
+      "P2M.Sol.S_Monoid_CoprodI_isTree_cosetGraph",
+      "P2M.Sol.S_Subgroup_card_orbitRelQuotient_mul_card_eq_index",
+      "P2M.Sol.S_SimpleGraph_exists_walkConnected_transversal_of_preconnected",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_SimpleGraph_exists_walkConnected_transversal_of_preconnected": [
+      "GroupImports",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_Subgroup_card_orbitRelQuotient_mul_card_eq_index": [
+      "GroupImports",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_Subgroup_IsArithmetic_exists_nat_mem_strictPeriods_conj": [
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_WLight_frickeFunction_modularity_package": [
+      "P2M.Sol.S_ModularForm_weierstrassP_torsion_qExpansion_package",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_WLight_frickeFunction_orbit_package": [
+      "P2M.Sol.S_WLight_levelOne_hauptmodul_package",
+      "P2M.Sol.S_WLight_frickeFunction_modularity_package",
+      "P2M.Sol.S_ModularForm_weierstrassP_torsion_qExpansion_package",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_WLight_levelN_structure_package": [
+      "P2M.Sol.S_WLight_levelOne_hauptmodul_package",
+      "P2M.Sol.S_WLight_frickeFunction_modularity_package",
+      "P2M.Sol.S_WLight_frickeFunction_orbit_package",
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_WLight_levelOne_hauptmodul_package": [
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Sol.S_WLight_weierstrassP_qExpansion_package": [
+      "P2M.Util",
+      "EndScopes"
+    ],
+    "P2M.Util": []
+  },
+  "consolidatedPublicStatements": 152
+}
